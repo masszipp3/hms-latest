@@ -1,0 +1,30 @@
+{% extends 'patient/patient_master.html' %}
+{% load static %}
+
+{% block header %}
+<style>
+  th{
+    background-color: rgb(29, 158, 243);
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+
+
+<h1 style="color: rgb(6, 6, 165); text-align: center;">
+    Appointment List
+  </h1>
+  
+  <section class="appoinment section">
+      <div class="container">
+        <div class="row">
+          {% include 'patient/booking_partial.html' %}
+        </div>
+      </div>
+
+    </section>
+
+    
+
+{% endblock %}
